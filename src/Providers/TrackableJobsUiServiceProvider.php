@@ -15,7 +15,7 @@ class TrackableJobsUiServiceProvider extends ServiceProvider
     {
         $this->app->afterResolving(BladeCompiler::class, function () {
             if (class_exists(Livewire::class)) {
-                Livewire::component('status', Status::class);
+//                Livewire::component('status', Status::class);
                 Livewire::component('job-status', JobStatus::class);
             }
         });
