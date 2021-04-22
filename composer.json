@@ -1,0 +1,15 @@
+{
+    "name": "mateusjunges/laravel-trackable-jobs-ui",
+    "description": "This package provides a simple UI for the trackable jobs package.",
+    "type": "library",
+    "require": {
+        "mateusjunges/laravel-trackable-jobs": "^1.1"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "mateusjunges",
+            "email": "mateus@junges.dev"
+        }
+    ]
+}
