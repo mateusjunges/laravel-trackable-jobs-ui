@@ -16,6 +16,8 @@ class JobStatus extends Component
 
     public function render()
     {
-        return view('components.job-status');
+        return view('components.job-status', [
+            'trackedJobs' => $this->trackedJobs
+        ]);
     }
 }
