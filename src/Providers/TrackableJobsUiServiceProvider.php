@@ -53,7 +53,7 @@ class TrackableJobsUiServiceProvider extends ServiceProvider
      */
     protected function registerComponent($component)
     {
-        Blade::component('jetstream::components.'.$component, 'jet-'.$component);
+        Blade::component('jetstream::components.'.$component, 'trackable-jobs-'.$component);
     }
 
 }

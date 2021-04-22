@@ -8,6 +8,6 @@ class JobStatus extends Component
 {
     public function render()
     {
-        return view('trackable-jobs::livewire.job-status');
+        return view('livewire.job-status');
     }
 }
