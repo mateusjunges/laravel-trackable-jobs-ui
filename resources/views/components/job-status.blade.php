@@ -10,7 +10,7 @@
             {{--                <b>{{ $deployment->initiator->name }}</b>--}}
             </p>
         </div>
-    @foreach ($trackedJobs as $job)
+        @foreach ($trackedJobs as $job)
             <div class="border-b">
                 <div class="flex justify-between items-center p-2 px-4">
                     <div class="flex items-center">
