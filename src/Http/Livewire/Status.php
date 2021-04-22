@@ -2,8 +2,8 @@
 
 namespace Junges\TrackableJobsUi\Http\Livewire;
 
+use Illuminate\View\Component;
 use Junges\TrackableJobs\Models\TrackedJob;
-use Livewire\Component;
 
 class Status extends Component
 {
@@ -14,7 +14,7 @@ class Status extends Component
      *
      * @return void
      */
-    public function mount(string $status)
+    public function __construct(string $status)
     {
         $this->status = $status;
     }

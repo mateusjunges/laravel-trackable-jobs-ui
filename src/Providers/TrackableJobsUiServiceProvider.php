@@ -15,7 +15,6 @@ class TrackableJobsUiServiceProvider extends ServiceProvider
     {
         $this->app->afterResolving(BladeCompiler::class, function () {
             if (class_exists(Livewire::class)) {
-//                Livewire::component('status', Status::class);
                 Livewire::component('job-status', JobStatus::class);
             }
         });
@@ -27,7 +26,7 @@ class TrackableJobsUiServiceProvider extends ServiceProvider
 
         $this->publishes([
             __DIR__."/../../config/trackable-jobs-ui.php" => config_path('trackable-jobs-ui.php')
-        ], 'trackabel-jobs-ui-config');
+        ], 'trackable-jobs-ui-config');
 
         $this->loadTranslationsFrom(__DIR__."/../../resources/lang", 'trackable-jobs');
         $this->publishes([
