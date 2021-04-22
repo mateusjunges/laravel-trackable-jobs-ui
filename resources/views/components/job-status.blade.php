@@ -27,4 +27,4 @@
         @endforeach
     </div>
 </div>
-<script src="{{ asset('public/css/vendor/trackable-jobs/css/app.css') }}"></script>
+<script src="{{ asset('public/vendor/trackable-jobs-ui/css/app.css') }}"></script>

@@ -38,6 +38,10 @@ class TrackableJobsUiServiceProvider extends ServiceProvider
             __DIR__."/../../resources/views" => resource_path('views/vendor/junges/trackable-jobs')
         ], 'trackable-jobs-views');
 
+        $this->publishes([
+            __DIR__ . "/../../public/" => public_path('vendor/trackable-jobs-ui')
+        ], 'trackable-jobs-ui-assets');
+
         $this->loadViewComponentsAs('trackable-jobs', [
             Status::class
         ]);
