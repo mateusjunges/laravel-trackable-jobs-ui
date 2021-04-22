@@ -1,4 +1,4 @@
-<div>
+<div wire:poll.750ms>
     <link href="{{ asset('vendor/trackable-jobs-ui/css/app.css') }}" rel="stylesheet">
     <div class="bg-white">
         <div class="p-4 border-b">
