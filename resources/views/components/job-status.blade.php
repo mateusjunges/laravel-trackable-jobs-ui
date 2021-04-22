@@ -3,7 +3,7 @@
         <div class="p-4 border-b">
             <div class="flex items-center mb-1">
                 <h1 class="text-xl mr-4">{{ $deployment->commit_message }}</h1>
-                <x-status :status="$deployment->status" />
+                <x-trackable-jobs-status :status="$deployment->status" />
             </div>
             <p class="text-sm text-gray-600">
                 Deployed to <b>{{ $deployment->environment->name }}</b> by
@@ -21,7 +21,7 @@
                         <span class="text-sm mr-2 text-gray-600">
                             {{ $step->duration() }}
                         </span>
-                        <x-status :status="$step->status" />
+                        <x-trackable-jobs-status :status="$step->status" />
                     </div>
                 </div>
             </div>
