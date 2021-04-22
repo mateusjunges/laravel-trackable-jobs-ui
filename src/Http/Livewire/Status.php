@@ -7,6 +7,18 @@ use Livewire\Component;
 
 class Status extends Component
 {
+    public string $status;
+
+    /**
+     * Create a new component instance.
+     *
+     * @return void
+     */
+    public function mount(string $status)
+    {
+        $this->status = $status;
+    }
+
     public function render()
     {
         return view('components.status');
@@ -39,5 +51,10 @@ class Status extends Component
     public function classList()
     {
         return "inline-block uppercase tracking-wide text-xs text-{$this->color()}-600 bg-{$this->color()}-200 rounded p-1 px-2";
+    }
+
+    public function statusDisplay()
+    {
+        return str_replace('_', ' ', $this->status);
     }
 }
