@@ -5,10 +5,6 @@
             <div class="flex items-center mb-1">
                 <h1 class="text-xl mr-4">Tracked Jobs</h1>
             </div>
-            {{--            <p class="text-sm text-gray-600">--}}
-            {{--                Deployed to <b>{{ $deployment->environment->name }}</b> by--}}
-            {{--                <b>{{ $deployment->initiator->name }}</b>--}}
-            </p>
         </div>
         @foreach ($trackedJobs as $job)
             <div class="border-b">
