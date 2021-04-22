@@ -21,7 +21,7 @@ class Status extends Component
 
     public function render()
     {
-        return view('components.status');
+        return view('trackable-jobs::components.status');
     }
 
     public function color()

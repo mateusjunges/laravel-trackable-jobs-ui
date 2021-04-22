@@ -18,7 +18,7 @@
 
                     <div class="flex items-center">
                         <span class="text-sm mr-2 text-gray-600">
-{{--                            {{ $job->duration() }}--}}Test duration
+{{--                            {{ $job->duration() }}--}}1 Hour
                         </span>
                         <x-trackable-jobs-status :status="$job->status" />
                     </div>
