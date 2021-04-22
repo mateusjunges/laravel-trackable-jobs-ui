@@ -14,12 +14,14 @@
             <div class="border-b">
                 <div class="flex justify-between items-center p-2 px-4">
                     <div class="flex items-center">
-                        <span class="text-gray-700 text-sm"># {{ $job->id }}</span>
+                        <span class="text-gray-700 text-sm">
+                            # {{ $job->id . " - " . $job->trackable_type }}
+                        </span>
                     </div>
 
                     <div class="flex items-center">
                         <span class="text-sm mr-2 text-gray-600">
-{{--                            {{ $job->duration() }}--}}1 Hour
+                            {{ $job->duration }}
                         </span>
                         <x-trackable-jobs-status :status="$job->status" />
                     </div>

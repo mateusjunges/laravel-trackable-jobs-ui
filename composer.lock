@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ff5ecfbd651d56f841473fd25bcec46c",
+    "content-hash": "4644cedf806747460f3c5761bf8a1046",
     "packages": [
         {
             "name": "brick/math",
@@ -926,16 +926,16 @@
         },
         {
             "name": "mateusjunges/laravel-trackable-jobs",
-            "version": "1.1.2",
+            "version": "1.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mateusjunges/trackable-jobs-for-laravel.git",
-                "reference": "7d7636e74298577e695d67bf756bc78ab0060eff"
+                "reference": "3cb042258cece01456514b08bd84feb639c80edb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mateusjunges/trackable-jobs-for-laravel/zipball/7d7636e74298577e695d67bf756bc78ab0060eff",
-                "reference": "7d7636e74298577e695d67bf756bc78ab0060eff",
+                "url": "https://api.github.com/repos/mateusjunges/trackable-jobs-for-laravel/zipball/3cb042258cece01456514b08bd84feb639c80edb",
+                "reference": "3cb042258cece01456514b08bd84feb639c80edb",
                 "shasum": ""
             },
             "require": {
@@ -946,7 +946,8 @@
             },
             "require-dev": {
                 "orchestra/testbench": "^5.0|^6.0",
-                "phpunit/phpunit": "^8.0|^9.0"
+                "phpunit/phpunit": "^8.0|^9.0",
+                "spatie/test-time": "^1.2"
             },
             "type": "library",
             "extra": {
@@ -975,9 +976,9 @@
             "description": "This package allows you to track your jobs",
             "support": {
                 "issues": "https://github.com/mateusjunges/trackable-jobs-for-laravel/issues",
-                "source": "https://github.com/mateusjunges/trackable-jobs-for-laravel/tree/1.1.2"
+                "source": "https://github.com/mateusjunges/trackable-jobs-for-laravel/tree/1.1.3"
             },
-            "time": "2021-04-19T14:15:42+00:00"
+            "time": "2021-04-22T20:57:57+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -7262,7 +7263,9 @@
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": "^7.4||^8.0"
+    },
     "platform-dev": [],
     "plugin-api-version": "2.0.0"
 }
