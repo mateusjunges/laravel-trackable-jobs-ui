@@ -1,4 +1,4 @@
-# laravel-trackable-jobs-ui
+# Laravel Trackable Jobs Ui
 This package provides a simple UI for the Trackable Jobs package.
 
 ## Installation
