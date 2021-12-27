@@ -5,7 +5,7 @@
     "require": {
         "php": "^7.4||^8.0",
         "mateusjunges/laravel-trackable-jobs": "^1.1",
-        "livewire/livewire": "^2.4"
+        "livewire/livewire": "^2.8"
     },
     "license": "MIT",
     "authors": [

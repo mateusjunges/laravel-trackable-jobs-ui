@@ -1,4 +1,4 @@
-<div wire:poll.750ms>
+<div wire:poll>
     <div class="bg-white">
         <div class="p-4 border-b">
             <div class="flex items-center mb-1">
@@ -10,7 +10,7 @@
                 <div class="flex justify-between items-center p-2 px-4">
                     <div class="flex items-center">
                         <span class="text-gray-700 text-sm">
-                            # {{ $job->id . " - " . $job->trackable_type }}
+                            # {{ $job->id . " - " . $job->name . " | Model: ". $job->trackable_type }}
                         </span>
                     </div>
 
@@ -18,11 +18,12 @@
                         <span class="text-sm mr-2 text-gray-600">
                             {{ $job->duration }}
                         </span>
-                        <x-trackable-jobs-status :status="$job->status" />
+                        <x-trackable-jobs-status :status="$job->status"/>
                     </div>
                 </div>
             </div>
         @endforeach
     </div>
 </div>
+
 

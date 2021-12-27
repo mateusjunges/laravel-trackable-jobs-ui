@@ -16,7 +16,7 @@ class JobStatus extends Component
 
     public function render()
     {
-        return view('components.job-status', [
+        return view('trackable-jobs::livewire.job-status', [
             'trackedJobs' => $this->trackedJobs
         ]);
     }

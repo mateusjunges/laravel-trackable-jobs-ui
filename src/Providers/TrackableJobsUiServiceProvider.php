@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\View\Compilers\BladeCompiler;
 use Junges\TrackableJobsUi\Http\Livewire\JobStatus;
-use Junges\TrackableJobsUi\Http\Livewire\Status;
+use Junges\TrackableJobsUi\View\Components\Status;
 use Livewire\Livewire;
 
 class TrackableJobsUiServiceProvider extends ServiceProvider
@@ -15,7 +15,7 @@ class TrackableJobsUiServiceProvider extends ServiceProvider
     {
         $this->app->afterResolving(BladeCompiler::class, function () {
             if (class_exists(Livewire::class)) {
-                Livewire::component('job-status', JobStatus::class);
+                Livewire::component('trackable-jobs-job-status', JobStatus::class);
             }
         });
     }
@@ -51,19 +51,20 @@ class TrackableJobsUiServiceProvider extends ServiceProvider
     {
         $this->callAfterResolving(BladeCompiler::class, function () {
             $this->registerComponent('status');
-            $this->registerComponent('job-status');
+            $this->registerComponent('job-status', 'livewire');
         });
     }
 
     /**
      * Register the given component.
      *
-     * @param  string  $component
+     * @param string $component
+     * @param string $namespace
      * @return void
      */
-    protected function registerComponent($component)
+    protected function registerComponent(string $component, string $namespace = 'components')
     {
-        Blade::component('trackable-jobs::components.'.$component, 'trackable-jobs-'.$component);
+        Blade::component('trackable-jobs::'.$namespace.'.'.$component, 'trackable-jobs-'.$component);
     }
 
 }
