@@ -26,5 +26,12 @@
         "psr-4": {
             "Junges\\TrackableJobsUi\\Tests\\": "tests/"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Junges\\TrackableJobsUi\\Providers\\TrackableJobsUiServiceProvider"
+            ]
+        }
     }
 }
